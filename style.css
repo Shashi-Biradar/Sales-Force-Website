@@ -1,0 +1,876 @@
+ * {
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ html,
+ body {
+     width: 100%;
+     height: 100%;
+ }
+
+ #main {
+     width: 100%;
+     height: 100%;
+
+ }
+
+ #header {
+     height: 13%;
+     width: 100%;
+     position: fixed;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     background-color: white;
+     /* margin: 10px; */
+     /* gap: 20px; */
+ }
+
+ #logo {
+
+     height: 70%;
+     margin: 20px;
+ }
+
+ #logo img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .texts {
+     color: darkbluelue;
+
+     display: flex;
+ }
+
+ .texts:hover {
+     color: aqua;
+ }
+
+ #contactdetail {
+
+     font-weight: lighter;
+ }
+
+ .icon {
+     padding: 10px;
+     border-radius: 50%;
+ }
+
+ .icon:hover {
+     background-color: lightblue;
+ }
+
+ #login {
+     padding: 10px;
+     border-radius: 50px;
+     display: flex;
+ }
+
+ #login:hover {
+     background-color: lightblue;
+ }
+
+ #try {
+     background-color: green;
+     padding: 10px 10px;
+     color: white;
+
+ }
+
+ #try:hover {
+     background-color: skyblue;
+ }
+
+ #fakeheader {
+     height: 13%;
+     width: 100%;
+
+
+ }
+
+ #page1 {
+     height: 87%;
+     width: 100%;
+     background-color: white;
+
+ }
+
+ #strip {
+     background-color: rgb(33, 33, 112);
+     height: 8%;
+     width: 100%;
+     color: white;
+     align-items: center;
+     /* text-align: center; */
+     justify-content: center;
+     display: flex;
+ }
+
+ #strip u {
+     margin-left: 20px;
+     font-weight: lighter;
+
+ }
+
+ #content {
+     width: 100%;
+     height: 80%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     justify-content: space-around;
+ }
+
+ #box1 {
+     height: 90%;
+     width: 47%;
+     background-color: white;
+
+ }
+
+ #box2 {
+     height: 90%;
+     width: 47%;
+     background-color: gray;
+ }
+
+ #box2 img {
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+ }
+
+
+ #heading {
+     width: 100%;
+     height: 16%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: rgb(31, 31, 44);
+ }
+
+ #heading h1 {
+     font-weight: 600;
+
+ }
+
+ #box1 h1 {
+     font-weight: 600;
+     color: rgb(0, 0, 80);
+     font-size: 50px;
+     margin: 30px 30px;
+
+ }
+
+ #box1 p {
+     font-size: x-large;
+     font-weight: lighter;
+     margin: 10px 10px;
+ }
+
+ #btns {
+     display: flex;
+
+ }
+
+ #btn1 {
+     margin: 10px;
+     width: 23%;
+     padding: 10px 20px;
+     color: white;
+     background-color: darkcyan;
+ }
+
+ #btn1:hover {
+     background-color: darkorchid;
+ }
+
+ #btn2 {
+     margin: 10px;
+     width: 23%;
+     padding: 10px 20px;
+     color: aqua;
+     border: 1px solid darkcyan;
+
+ }
+
+ #btn2:hover {
+     background-color: darkblue;
+     color: darkolivegreen;
+     border: 1px solid darkcyan;
+
+ }
+
+ #page2 {
+     height: 87%;
+     width: 100%;
+     background-color: white;
+     display: flex;
+     justify-content: space-around;
+     background-image: image-set();
+
+
+ }
+
+ #box3 {
+     width: 20%;
+     height: 67%;
+     border: 1px solid rgb(228, 211, 211);
+     border-radius: 10px;
+     margin-top: 90px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+ }
+
+ #box3 img {
+     width: 100%;
+     height: 40%;
+     object-fit: cover;
+ }
+
+ #box3 h3 {
+     padding: 20px;
+     color: rgb(23, 29, 37);
+ }
+
+ #box3 p {
+     padding: 10px;
+     margin-left: 10px;
+     color: lightslategray;
+ }
+
+ #box4 {
+     width: 20%;
+     height: 67%;
+     border: 1px solid rgb(228, 211, 211);
+     border-radius: 10px;
+     margin-top: 90px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ #box4 img {
+     width: 100%;
+     height: 40%;
+     object-fit: cover;
+ }
+
+ #box4 h3 {
+     padding: 20px;
+     color: rgb(23, 29, 37);
+ }
+
+ #box4 p {
+     padding: 10px;
+     margin-left: 10px;
+     color: lightslategray;
+ }
+
+ #box5 {
+     width: 20%;
+     height: 67%;
+     border: 1px solid rgb(228, 211, 211);
+     border-radius: 10px;
+     margin-top: 90px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ #box5 img {
+     width: 100%;
+     height: 40%;
+     object-fit: cover;
+ }
+
+ #box5 h3 {
+     padding: 20px;
+     color: rgb(23, 29, 37);
+ }
+
+ #box5 p {
+     padding: 10px;
+     margin-left: 10px;
+     color: lightslategray;
+ }
+
+ #box6 {
+     width: 20%;
+     height: 67%;
+     border: 1px solid rgb(228, 211, 211);
+     border-radius: 10px;
+     margin-top: 90px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ #box6 img {
+     width: 100%;
+     height: 40%;
+     object-fit: cover;
+ }
+
+ #box6 h3 {
+     padding: 20px;
+     color: rgb(23, 29, 37);
+ }
+
+ #box6 p {
+     padding: 10px;
+     margin-left: 10px;
+     color: lightslategray;
+ }
+
+ .par {
+     margin-top: 25px;
+     font-weight: 600;
+     text-decoration: underline;
+     width: 45%;
+     height: 20px;
+     color: blue;
+ }
+
+ .par:hover {
+     text-decoration: none;
+     cursor: pointer;
+ }
+
+ #page3 {
+     height: 87%;
+     width: 100%;
+
+ }
+
+ #bkgrndimg img {
+     width: 100%;
+     height: 280px;
+
+ }
+
+ #popup {
+     margin-left: 550px;
+     margin-top: 50px;
+     width: 200px;
+     height: 40px;
+     border: 2px solid rgb(118, 118, 222);
+     background-color: white;
+     color: rgb(108, 108, 239);
+     font-weight: 900;
+     border-radius: 5px;
+ }
+
+ #popup:hover {
+     cursor: pointer;
+     background-color: rgb(194, 240, 248);
+     color: black;
+     border: 2px solid rgb(25, 25, 28);
+
+ }
+
+ #header2 p {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 10px 10px;
+     font-size: 40px;
+     font-weight: bolder;
+
+ }
+
+ #page4 {
+     height: 87%;
+     width: 100%;
+
+ }
+
+ #page4 p {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 21px;
+     margin-top: 5px;
+
+ }
+
+ #info {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #btn4 {
+     margin: 30px;
+     padding: 10px 20px;
+     border: 2px solid rgb(16, 140, 218);
+     border-radius: 5px;
+     width: 150px;
+     height: 40px;
+     color: white;
+     background-color: rgb(22, 181, 225);
+     font-weight: bolder;
+ }
+
+ #btn4:hover {
+     background-color: rgb(6, 6, 51);
+     border: 1px solid rgba(0, 0, 0, 0.345);
+ }
+
+ #btn5 {
+     padding: 10px 20px;
+     border: 2px solid rgb(12, 110, 239);
+     border-radius: 5px;
+     width: 150px;
+     height: 40px;
+     color: rgb(15, 74, 202);
+     background-color: white;
+     font-weight: bolder;
+ }
+
+ #btn5:hover {
+     background-color: rgb(226, 234, 235);
+ }
+
+ #subheading h1 {
+     text-align: center;
+     margin-top: 50px;
+     margin-bottom: 20px;
+     color: rgb(5, 5, 48);
+
+ }
+
+ #burr p {
+     margin: 10px;
+ }
+
+ #maincontainer {
+     display: flex;
+     justify-content: space-around;
+
+ }
+
+ #container {
+     width: 28%;
+     border: 1px solid rgb(224, 219, 219);
+     border-radius: 20px;
+     padding-bottom: 30px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+ }
+
+ #container img {
+     margin: 20px 0px 0px 110px;
+     width: 35%;
+ }
+
+ #container h3 {
+     width: 80px;
+     height: 30px;
+     border: 1px solid black;
+     border-radius: 50px;
+     padding: 2px 0px 0px 8px;
+     margin: 30px 0px 0px 25px;
+     background-color: skyblue;
+     font-weight: lighter;
+     font-size: bold;
+     color: black;
+
+ }
+
+ #container h1 {
+     padding: 20px 0px 0px 25px;
+ }
+
+ #container p {
+     font-size: 20px;
+     padding: 20px 0px 0px 25px;
+     margin-bottom: 50px;
+ }
+
+ #container a {
+     font-size: 20px;
+     padding: 20px 0px 0px 25px;
+
+ }
+
+ #container1 {
+     text-align: center;
+     margin-top: 70px;
+ }
+
+ #container1 button {
+
+     width: 180px;
+     height: 40px;
+     font-size: 20px;
+     border-radius: 5px;
+     background-color: white;
+     border: 3px solid skyblue;
+ }
+
+ #container2 {
+     text-align: center;
+     padding-left: 400px;
+     padding-top: 50px;
+ }
+
+ #container2 h1 {
+     width: 60%;
+     font-size: 23px;
+
+ }
+
+ #container3 h3 {
+     width: 220px;
+     height: 35px;
+     font-size: 20px;
+     border: 2px solid rgb(73, 13, 224);
+     border-radius: 5px;
+     padding: 10px 0px 0px 20px;
+     margin: 60px 0px 0px 520px;
+     color: rgb(56, 56, 147);
+
+ }
+
+ #maincontainer4 {
+     display: flex;
+     column-gap: 20px;
+     margin: 80px 0px 0px 100px;
+ }
+
+ #maincontainer4 img {
+     width: 200px;
+     border: 1px solid white;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ #maincontainer5 {
+     display: flex;
+     column-gap: 20px;
+     margin: 40px 0px 0px 320px;
+
+ }
+
+ #maincontainer5 img {
+     border: 1px solid white;
+     width: 200px;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+ }
+
+ #bgimg img {
+     width: 100%;
+     height: 200px;
+     margin-bottom: 40px;
+
+ }
+
+ #maincontainer6 {
+     width: 87%;
+     height: 50%;
+     border: 1px solid white;
+     border-radius: 8px;
+     margin-left: 90px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     display: flex;
+ }
+
+ #container6 h1 {
+     font-size: 33px;
+     padding: 90px 0px 0px 90px;
+     color: rgb(9, 33, 53);
+ }
+
+ #btns1 {
+     margin: 100px 0px 0px 90px;
+     border: 3px solid rgb(7, 173, 239);
+     border-radius: 5px;
+     font-size: 20px;
+     width: 180px;
+     height: 40px;
+     color: white;
+     font-weight: bold;
+     background-color: rgb(7, 173, 239);
+ }
+
+ #btns1:hover {
+     cursor: pointer;
+     border: 3px solid rgb(26, 26, 89);
+     background-color: rgb(26, 26, 89);
+ }
+
+ #btns2 {
+     width: 180px;
+     height: 40px;
+     margin-left: 20px;
+     font-size: 20px;
+     color: rgb(7, 173, 239);
+     font-weight: bold;
+     border: 2px solid rgb(7, 173, 239);
+     border-radius: 5px;
+     background-color: white;
+ }
+
+ #btns2:hover {
+     cursor: pointer;
+     border: 1px solid rgb(26, 26, 89);
+     background-color: rgb(186, 186, 209);
+ }
+
+ #container7 img {
+     width: 600px;
+     height: 450px;
+
+ }
+
+ #maincontainer8 {
+     text-align: center;
+     color: rgb(14, 32, 66);
+     padding-top: 140px;
+     font-size: 20px;
+     padding-bottom: 100px;
+ }
+
+ #maincontainer9 {
+     display: flex;
+
+ }
+
+ #container9 img {
+     width: 240px;
+     margin-left: 60px;
+     margin-bottom: 20px;
+ }
+
+ #container9 a {
+     padding-left: 60px;
+
+     font-size: 23px;
+ }
+
+ #container9 a:hover {
+     cursor: pointer;
+     text-decoration: none;
+ }
+
+ #container10 h1 {
+     font-size: 33px;
+     padding: 90px 0px 0px 270px;
+     background-color: rgb(229, 233, 236);
+     color: rgb(9, 33, 53);
+ }
+
+ #container10 span {
+     padding-left: 80px;
+ }
+
+ #maincontainer11 {
+     display: flex;
+     background-color: rgb(229, 233, 236);
+
+ }
+
+ #container11 img {
+     width: 300px;
+     height: 200px;
+
+     margin-left: 90px;
+     margin-top: 50px;
+ }
+
+ #container11 p {
+     padding: 20px 0px 0px 80px;
+     width: 400px;
+ }
+
+ #container12 {
+     position: absolute;
+     top: 4805px;
+
+
+ }
+
+ #container12 img {
+     width: 100%;
+     height: 100%;
+     background-color: rgb(229, 233, 236);
+ }
+
+ #maincontainer13 {
+
+     background-image: url("https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/04/pb-hp-footer-mid3-in.jpg?resize=2048,1270");
+     height: 400px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     margin: 350px 100px 0px 100px;
+     border: 1px solid rgb(209, 201, 201);
+
+ }
+
+ #container13 {
+
+     margin-top: 60px;
+
+
+
+
+
+ }
+
+ #container13 h1 {
+     font-size: 33px;
+     padding-bottom: 40px;
+     padding-left: 220px;
+     color: rgb(14, 28, 56);
+ }
+
+ #container13 p {
+     font-size: 25px;
+
+     text-align: center;
+ }
+
+ #btns3 {
+     margin: 40px 0px 0px 400px;
+     font-size: 20px;
+     width: 150px;
+     height: 40px;
+     background-color: rgb(107, 107, 243);
+     border: 1px solid white;
+     color: white;
+     border-radius: 5px;
+ }
+
+ #btns3:hover {
+     background-color: rgb(9, 9, 51);
+ }
+
+ #btns4 {
+     width: 150px;
+     font-size: 20px;
+     height: 40px;
+     border: 1px solid white;
+     background-color: rgb(252, 255, 255);
+     color: rgb(9, 9, 51);
+     text-decoration: underline;
+     margin: 40px 0px 0px 40px;
+ }
+
+ #btns4:hover {
+     text-decoration: none;
+     cursor: pointer;
+     color: rgb(17, 130, 230);
+ }
+
+ #maincontainer14 {
+     display: flex;
+     margin-top: 100px;
+
+ }
+
+ #container14 {
+     margin-left: 140px;
+     width: 14.3%;
+ }
+
+ #container14 img {
+     width: 145px;
+     margin-bottom: 40px;
+ }
+
+ #container14 i {
+     font-size: 28.8px;
+     border: 1px solid rgb(238, 225, 225);
+     border-radius: 5px;
+     background-color: gray;
+     color: white;
+ }
+
+ #container14 p {
+     font-size: medium;
+     padding: 20px 0px 0px 10px;
+
+ }
+
+ #container15 {
+     line-height: 30px;
+     margin: 0px 0px 0px 90px;
+
+ }
+
+ #container15 p {
+     color: cornflowerblue;
+ }
+
+ #maincontainer16 {
+     background-color: rgb(8, 25, 74);
+
+ }
+
+ #container16 h3 {
+     color: white;
+     padding-left: 200px;
+     padding-right: 20px;
+ }
+
+ #container16 {
+     display: flex;
+     padding-left: 20px;
+     gap: 15px;
+     margin-top: 80px;
+     padding-top: 40px;
+
+
+ }
+
+ #container16 a {
+     color: white;
+     font-size: 14px;
+
+ }
+
+ #container17 {
+     padding-top: 8px;
+ }
+
+ #ic1 {
+     color: white;
+     margin-left: 410px;
+     background-color: rgb(191, 192, 201);
+     font-size: 14px;
+     border-radius: 5px 0px 0px 5px;
+
+ }
+
+ #ic2 {
+     background-color: rgb(19, 45, 209);
+     font-size: 14px;
+     color: white;
+     border-radius: 0px 5px 5px 0px;
+
+ }
+
+ #container17 a {
+     color: white;
+
+
+     font-size: 14px;
+ }
+
+ #container17 h5 {
+     color: white;
+     font-size: 15px;
+     padding: 30px 0px 50px 400px;
+     font-weight: lighter;
+ }
